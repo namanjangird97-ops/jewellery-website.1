@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFAFA; /* पेज का हल्का बैकग्राउंड */ 
+    color: #333333;
+} 
+.card-section{
+  background-color: #f8f8ff; 
+  border: 1px solid #dcdcdc;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+  =================================
+  Navbar Container (Top Bar)
+  =================================
+*/
+.navbar {
+    background-color: #ffffff; /* सफेद बैकग्राउंड */
+    border-bottom: 1px solid #eeeeee; /* हल्का नीचे बॉर्डर */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* अधिकतम चौड़ाई */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* डार्क कलर */
+    font-family: 'Times New Roman', serif; /* या विशिष्ट फ़ॉन्ट */
+}
+
+/*
+  =================================
+  Search Bar and Utility Icons
+  =================================
+*/
+.search-and-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* सर्च बार और आइकन्स के बीच की दूरी */
+}
+
+.search-box-container {
+    display: flex;
+    align-items: center;
+    width: 450px; /* सर्च बार की चौड़ाई */
+    background-color: #f7f7f7; /* सर्च बार का हल्का ग्रे बैकग्राउंड */
+    border-radius: 4px;
+    padding: 8px 15px;
+}
+
+.search-icon {
+    display: flex; /* SVG को सेंटर करने के लिए */
+    color: #888;
+    margin-right: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+    color: #333;
+    /* Placeholder का स्टाइल */
+}
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.utility-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-link {
+    color: #555;
+    display: flex;
+    transition: color 0.2s;
+}
+
+.icon-link:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+
+/*
+  =================================
+  Main Navigation Links (Category Tabs)
+  =================================
+*/
+.main-nav {
+    border-top: 1px solid  white; /* टॉप बार से अलग करने के लिए */
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center; /* लिंक्स को सेंटर में रखता है */
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-item {
+    margin: 0 15px;
+    padding: 5px 0;
+}
+
+.nav-item a {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 5px; /* एक्टिव लाइन के लिए स्पेस */
+    transition: color 0.2s;
+}
+
+.nav-item a:hover {
+    color: #000;
+}
+
+/* Active link for the current page */
+.nav-item.active a {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 2px solid #333; /* एक्टिव टैब के नीचे डार्क लाइन */
+} 
+/*
+  =================================
+  Navbar Container and Base Styles
+  =================================
+*/
+.navbar-container {
+    background-color: #000; /* ब्लैक बैकग्राउंड */
+    color: black; /* डिफ़ॉल्ट टेक्स्ट कलर सफेद (या गोल्ड जैसा) */
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between; /* लोगो और लिंक्स को विपरीत दिशाओं में धकेलता है */
+    align-items: center; /* वर्टिकली सेंटर में अलाइन करता है */
+    max-width: 1300px; /* यदि आप चाहते हैं कि कंटेंट सेंटर में हो */
+    margin: 0 auto;
+}
+
+/*
+  =================================
+  Brand/Logo Section (Left Side)
+  =================================
+*/
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* लोगो और टेक्स्ट के बीच की दूरी */
+}
+
+/* लोगो इमेज कंटेनर 
+  नोट: आपको अपनी S-मोनोग्राम इमेज को यहाँ बैकग्राउंड इमेज के रूप में लगाना होगा 
+*/
+ /* Logo */
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333; 
+
+    }
+   .logo img {
+      height: 100px; /* लोगो की ऊंचाई */
+      width: auto;
+    } 
+
+.brand-text {
+    /* ब्रांड टेक्स्ट को एक ही इकाई में रखता है */
+    line-height: 1.1; /* लाइन के बीच की दूरी कम करता है */
+}
+
+.brand-name-top {
+    font-size: 28px;
+    font-weight: bold;
+    color: black; /* SHVLLAL को गोल्ड कलर देने के लिए */
+    letter-spacing: 2px;
+}
+
+.brand-name-bottom {
+    font-size: 14px;
+    font-weight: normal;
+    color: #ccc; /* JEWELERS AND SONS को हल्का सफेद/ग्रे देने के लिए */
+    letter-spacing: 1.5px;
+    margin-top: 2px;
+}
+ .marquee-item img {
+  /* Set a specific size. You may need to experiment with the values. */
+  width: 150px; /* Example: making them 150 pixels wide */
+  height: 150px; /* Example: making them 150 pixels tall */
+  
+  /* Optional: Ensures the image maintains its proportions when resizing */
+  object-fit:cover;
+} 
+.marquee-container { 
+    animation-duration: 10s;;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+/*
+  =================================
+  Main Navigation Links (Right Side)
+  =================================
+*/
+.main-nav-links {
+    /* नेविगेशन लिंक्स को मैनेज करता है */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* लिंक्स के बीच की दूरी */
+}
+
+.nav-item a {
+    font-size: 16px;
+    color: black; /* लिंक का कलर सफेद/हल्का */
+    font-weight: 500;
+    padding-bottom: 5px; /* होवर/एक्टिव स्टेट के लिए स्पेस */
+    transition: color 0.3s; 
+    gap: 15px;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+     color: gold; /* होवर करने पर गोल्ड कलर */
+    /* यदि आप अंडरलाइन चाहते हैं तो: */
+    /* border-bottom: 2px solid gold; */
+} 
+/*
+  =================================
+  Section Title Style
+  =================================
+*/
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500; /* हल्का फॉन्ट वेट */
+    margin: 40px 0 30px 0; /* ऊपर और नीचे मार्जिन */
+    color: #333;
+} 
+.marquee-item img {
+  /* Set a specific size. You may need to experiment with the values. */
+  width: 150px; /* Example: making them 150 pixels wide */
+  height: 150px; /* Example: making them 150 pixels tall */
+  
+  /* Optional: Ensures the image maintains its proportions when resizing */
+  object-fit:cover;
+} 
+/* Footer Base */
+.footer {
+  font-family: Arial, sans-serif;
+background: black;
+  color: #ddd;
+  padding:  20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px;
+}
+
+.footer-section h2.logo {
+  color: #ffcc00;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-left: 3px solid #ffcc00;
+  padding-left: 8px;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Newsletter */
+.newsletter form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.newsletter input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+}
+
+.newsletter button {
+  padding: 8px 15px;
+  border: none;
+  background: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter button:hover {
+  background: #e6b800;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 15px; 
+} 
+.social-media-handle i {  
+    color: #FFFFFF; 
+    font-size: 36px; 
+    margin-bottom: 15px; 
+    display: flex; 
+    
+}
+
+
+.social-icons a img { 
+    color: #000000; 
+    font-size: 36px; 
+    margin-bottom: 15px;
+    transition: color 0.3s;
+display: block;
+    
+  
+}
+
+.social-icons a img:hover { 
+    color: #DAA520;
+  filter: invert(77%) sepia(61%) saturate(456%) hue-rotate(10deg) brightness(98%) contrast(97%);
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom .policies a {
+  color: #aaa;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-bottom .policies a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter form {
+    flex-direction: column;
+  }
+  .newsletter input, .newsletter button {
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+} 
+.footer-logo {
+    height: 80px; /* लोगो की ऊंचाई */
+    width: auto;
+    border-radius: 50%; /* गोलाकार लोगो के लिए */
+    margin-bottom: 10px;
+  }

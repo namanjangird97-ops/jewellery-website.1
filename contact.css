@@ -1,0 +1,50 @@
+body{
+  font-family: Arial, sans-serif;
+background: black;
+  color: #ddd;
+  padding:  20px 0;
+}  
+.logo a { 
+    height: 50px; 
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* डार्क कलर */
+    font-family: 'Times New Roman', serif; /* या विशिष्ट फ़ॉन्ट */
+} 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+}
+.social-icons {
+  margin-top: 15px; 
+} 
+.social-media-handle i {  
+    color: #FFFFFF; 
+    font-size: 36px; 
+    margin-bottom: 15px; 
+    display: flex; 
+    
+}
+
+
+.social-icons a img { 
+    color: #000000; 
+    font-size: 36px; 
+    margin-bottom: 15px; 
+    height: 40px; 
+        width: 40px; 
+        margin-right: 10px;
+    transition: color 0.3s;
+display: block;
+    
+  
+}
+
+.social-icons a img:hover { 
+    color: #DAA520;
+  filter: invert(77%) sepia(61%) saturate(456%) hue-rotate(10deg) brightness(98%) contrast(97%);
+} 
