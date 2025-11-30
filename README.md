@@ -1,2 +1,2 @@
 # jewellery-website.1
-i created a jewellery website
+An e-commerce landing page design for a jewellery brand, focusing on UI/UX.
